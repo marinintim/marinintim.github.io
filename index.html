@@ -1,30 +1,111 @@
 <!doctype html>
-<title>Marinin Tim</title>
+<meta charset="utf-8">
+<meta description="Homepage of Tim Marinin, web developer from Russia.">
+<meta keywords="Marinin Tim, marinintim, randomwind, web development, web design">
+<title>Marinin Tim — web developer</title>
 <style>
-	@import "http://webfonts.ru/import/aaargh.css";
-	
-	body {
-		font-size: 40px;
-		text-align: center;
-		background: #F1F5F8;
-		font-family: "Aaargh";
+	html, body {
+		margin: 0;
+		height: 100%;
+		width: 100%;
+		box-sizing: border-box;
+		font: 1.5rem/1.5 'PT Sans', 'Helvetica', Arial, sans-serif;
 	}
-	header {
-		font-size: 200px;
-		line-height: 470px;
-	}
-	ul {
-		list-style-type: none;
-	}
-	li {
-		display: inline;
-	}
-	p { margin-bottom: 100px; }
-</style>
+	* { box-sizing: inherit; }
+	.fs { min-height: 100vh; }
 
-<header>Marinin Tim</header>
-<ul>
-	<li><a href="//vk.com/marinintim">VK profile</a>,
-	<li><a href="//github.com/marinintim">Github profile</a>
-</ul>
-<p>I love web.</p>
+
+	.vcard { 
+		margin: 0 auto;
+		padding: 1rem;
+		max-width: 40rem;
+	}
+
+	.fn {
+		margin: 1.5em 0 0;
+	}
+
+	.photo {
+		vertical-align: top;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.contacts {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.projects-section {
+		background: rgba(0, 0, 10, .7);
+		color: #fff;
+		font-size: 1rem;
+	}
+
+	.projects-header {
+		margin: 2rem;
+	}
+
+	.projects-list {
+		list-style: none;
+		margin: 0;
+		padding: 1rem;
+	}
+
+	.project {
+		vertical-align: top;
+		display: inline-block;
+		margin: 1rem;
+		width: 15rem;
+	}
+	
+	.project-name {
+		border-bottom: .2rem dotted rgba(0, 0, 20, .9);
+		margin-bottom: .1rem;
+	}
+
+	.project-description {
+		margin: 0;
+		padding: 0;
+	}
+
+	.project-link {
+		display: block;
+		font-family: monospace;
+	}
+</style>
+<main class="vcard fs">
+	<header class="fn"><h1>Marinin <span class="name">Tim</span></h1>
+	<h2>Front end developer</h2>
+	</header>
+	Contact me via
+	<ol class="contacts">
+		<li>email: <a rel="me" href="mailto:marinintim@gmail.com" class="email">marinintim@gmail.com</a></li>
+		<li>vk: <a class="url uid" rel="me" href="//vk.com/marinintim">@marinintim</a></li>
+		<li>twitter: <a rel="me" class="url uid" href="//twitter.com/marinintim">@marinintim</a></li>
+	</ol>
+</main>
+
+<section class="fs projects-section">
+	<header class="projects-header">
+		<h1>Projects</h1>
+	</header>
+
+	<ul class="projects-list">
+		<li class="project">
+			<h3 class="project-name">Frontier Magazine</h3>
+			<p class="project-description"> Russian web magazine.
+			<a class="project-link" href="//frontiermag.ru">//frontiermag.ru</a>
+		</li>
+		<li class="project">
+			<h3 class="project-name">Web Achievements</h3>
+			<p class="project-description"> Earn badges throughout web activities.
+			<a class="project-link" href="//webachievements.org">//webachievements.org</a>
+		</li>
+		<li class="project">
+			<h3 class="project-name">Editorial</h3>
+			<p class="project-description"> Manage creation of content with ease.
+			<a class="project-link" href="//editorial.io">//editorial.io</a>
+		</li>
+	</ul>
+</section>
