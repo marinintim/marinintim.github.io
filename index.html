@@ -3,109 +3,89 @@
 <meta description="Homepage of Tim Marinin, web developer from Russia.">
 <meta keywords="Marinin Tim, marinintim, randomwind, web development, web design">
 <title>Marinin Tim — web developer</title>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
 <style>
 	html, body {
 		margin: 0;
 		height: 100%;
 		width: 100%;
 		box-sizing: border-box;
-		font: 1.5rem/1.5 'PT Sans', 'Helvetica', Arial, sans-serif;
+		font: 16pt/1.618 'PT Sans Caption', 'Helvetica', Arial, sans-serif;
 	}
-	* { box-sizing: inherit; }
-	.fs { min-height: 100vh; }
+
+  * {
+  	box-sizing: inherit;
+  }
 
 
-	.vcard { 
-		margin: 0 auto;
+	.wrapper {
+		display: inline-block;
+		vertical-align: top;
 		padding: 1rem;
-		max-width: 40rem;
+	}
+
+	.vcard {
+		vertical-align: top;
+		display: inline-block;
+		padding: 1rem;
 	}
 
 	.vcard header {
-		margin: 1.5em 0 0;
 	}
 
-	.photo {
-		vertical-align: top;
-		display: inline-block;
-		width: 100%;
-	}
 
 	.contacts {
+		margin: 0;
 		margin-top: 0;
 		padding-top: 0;
-	}
-
-	.projects-section {
-		background: rgba(0, 0, 10, .7);
-		color: #fff;
-		font-size: 1rem;
-	}
-
-	.projects-header {
-		margin: 2rem;
-	}
-
-	.projects-list {
 		list-style: none;
-		margin: 0;
-		padding: 1rem;
-	}
-
-	.project {
-		vertical-align: top;
-		display: inline-block;
-		margin: 1rem;
-		width: 15rem;
-	}
-	
-	.project-name {
-		border-bottom: .2rem dotted rgba(0, 0, 20, .9);
-		margin-bottom: .1rem;
-	}
-
-	.project-description {
-		margin: 0;
 		padding: 0;
 	}
-
-	.project-link {
-		display: block;
-		font-family: monospace;
+	
+	.photo {
+		float: right;
+		display: inline-block;
+		margin-right: 10vw;
+		max-width: 300px;
+		vertical-align: bottom;
 	}
+	
+	@media screen and (min-aspect-ratio: 2/1) and (min-width: 1336px) {
+		.wrapper {			
+			max-width: 40em;
+		}
+		.hr {
+			margin-top: -100%;
+		}
+	}
+	
+
+	.hr {
+		display: inline-block;
+		width: 100%;
+		border-bottom: .3em solid black;
+	}
+
+
 </style>
-<main class="vcard fs">
-	<header><h1 class="fn">Marinin Tim</h1>
-	<h2 class="role title">Front end developer</h2>
-	</header>
-	Contact me via
-	<ol class="contacts">
+<aside class="vcard fs">
+	<h1 class="fn">Marinin Tim</h1>
+	<ul class="contacts">
 		<li>email: <a rel="me" href="mailto:marinintim@gmail.com" class="email">marinintim@gmail.com</a></li>
 		<li>vk: <a class="url uid" rel="me" href="//vk.com/marinintim">@marinintim</a></li>
 		<li>twitter: <a rel="me" class="url uid" href="//twitter.com/marinintim">@marinintim</a></li>
-	</ol>
+	</ul>
+
+</aside><!--
+--><main class="wrapper">
+	<h2>Who am I</h2>
+	<p>I'm a frontend developer.
+	<p>At this moment I'm working for social network <a href="//fotostrana.ru" hreflang="ru">Fotostrana</a>.
+	<p>Also I'm editor of <a href="//frontiermag.ru" hreflang="ru">Frontier Magazine</a>, which is for web dev people, developer of <a href="//mistype.co">Mistype</a> and <a href="//editorial.io">Editorial</a>.
+	<p>I'm sketching at <a href="//sketchandscotch.tumblr.com">Sketch&Scotch</a>, writing on <a href="//medium.com/@marinintim" hreflang="ru">Medium</a>/<a href="//twitter.com/marinintim" hreflang="ru">Twitter</a> and&nbsp;doing a&nbsp;lot&nbsp;of&nbsp;interesting stuff elsewhere.
+	<p>Feel free to contact&nbsp;me.
 </main>
 
-<section class="fs projects-section">
-	<header class="projects-header">
-		<h1>Projects</h1>
-	</header>
-
-	<ul class="projects-list">
-		<li class="project">
-			<h3 class="project-name">Frontier Magazine</h3>
-			<p class="project-description"> Russian web magazine.
-			<a class="project-link" href="//frontiermag.ru">//frontiermag.ru</a>
-		</li>
-		<li class="project">
-			<h3 class="project-name">Web Achievements</h3>
-			<p class="project-description"> Earn badges throughout web activities.
-			<a class="project-link" href="//webachievements.org">//webachievements.org</a>
-		</li>
-		<li class="project">
-			<h3 class="project-name">Editorial</h3>
-			<p class="project-description"> Manage creation of content with ease.
-			<a class="project-link" href="//editorial.io">//editorial.io</a>
-		</li>
-	</ul>
-</section>
+<div class="hr">
+<img src="tim.jpg" class="photo">
+</div>
