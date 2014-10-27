@@ -25,9 +25,11 @@
 	}
 
 	.vcard {
+		height: 100%;
 		vertical-align: top;
 		display: inline-block;
 		padding: 1rem;
+		border-right: .3em solid black;
 	}
 
 	.vcard header {
@@ -43,9 +45,8 @@
 	}
 	
 	.photo {
-		float: right;
 		display: inline-block;
-		margin-right: 10vw;
+		margin-top: 1em;
 		max-width: 300px;
 		vertical-align: bottom;
 	}
@@ -54,14 +55,11 @@
 		.wrapper {			
 			max-width: 40em;
 		}
-		.hr {
-			margin-top: -50%;
-		}
 	}
 	
 
 	.hr {
-		display: inline-block;
+		display: block;
 		width: 100%;
 		border-bottom: .3em solid black;
 	}
@@ -70,22 +68,21 @@
 </style>
 <aside class="vcard fs">
 	<h1 class="fn">Marinin Tim</h1>
-	<ul class="contacts">
-		<li>email: <a rel="me" href="mailto:marinintim@gmail.com" class="email">marinintim@gmail.com</a></li>
-		<li>vk: <a class="url uid" rel="me" href="//vk.com/marinintim">@marinintim</a></li>
-		<li>twitter: <a rel="me" class="url uid" href="//twitter.com/marinintim">@marinintim</a></li>
-	</ul>
-
+	<dl class="contacts">
+		<dt>email</dt>
+			<dd><a rel="me" href="mailto:marinintim@gmail.com" class="email">marinintim@gmail.com</a></dd>
+		<dt>vk</dt>
+			<dd><a class="url uid" rel="me" href="//vk.com/marinintim">@marinintim</a></dd>
+		<dt>twitter</dt>
+			<dd><a rel="me" class="url uid" href="//twitter.com/marinintim">@marinintim</a></dd>
+	</dl>
+	<img src="tim.jpg" class="photo">
 </aside><!--
 --><main class="wrapper">
 	<h2>Who am I</h2>
 	<p>I'm a frontend developer.
-	<p>At this moment I'm working for social network <a href="//fotostrana.ru" hreflang="ru">Fotostrana</a>.
+	<p>At this moment I'm working for social network <a href="//fotostrana.ru" rel="work" hreflang="ru">Fotostrana</a>.
 	<p>Also I'm editor of <a href="//frontiermag.ru" hreflang="ru">Frontier Magazine</a>, which is for web dev people, developer of <a href="//mistype.co">Mistype</a> and <a href="//editorial.io">Editorial</a>.
 	<p>I'm sketching at <a href="//sketchandscotch.tumblr.com">Sketch&Scotch</a>, writing on <a href="//medium.com/@marinintim" hreflang="ru">Medium</a>/<a href="//twitter.com/marinintim" hreflang="ru">Twitter</a> and&nbsp;doing a&nbsp;lot&nbsp;of&nbsp;interesting stuff elsewhere.
 	<p>Feel free to contact&nbsp;me.
 </main>
-
-<div class="hr">
-<img src="tim.jpg" class="photo">
-</div>
