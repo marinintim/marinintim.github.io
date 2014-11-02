@@ -3,14 +3,24 @@
 <meta description="Homepage of Tim Marinin, web developer from Russia.">
 <meta keywords="Marinin Tim, marinintim, randomwind, web development, web design">
 <title>Marinin Tim — web developer</title>
+<link rel="icon" href="/favicon-tm.png">
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
 <style>
-	html, body {
+	body {
 		margin: 0;
 		height: 100%;
 		width: 100%;
 		box-sizing: border-box;
 		font: 16pt/1.618 'PT Sans Caption', 'Helvetica', Arial, sans-serif;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	@media screen and (min-width: 768px) {
+		body {
+			flex-wrap: nowrap;
+		}
 	}
 
   * {
@@ -18,20 +28,12 @@
   }
 
 
-	.wrapper {
-		display: inline-block;
-		vertical-align: top;
+	.wrapper, .vcard {
 		padding: 1rem;
 	}
 
-	.vcard {
-		height: 100%;
-		vertical-align: top;
-		display: inline-block;
-		padding: 1rem;
-	}
-
-	.vcard header {
+	.fn {
+		margin-bottom: 0;
 	}
 
 
@@ -44,28 +46,20 @@
 	}
 	
 	.photo {
-		display: inline-block;
-		margin-top: 1em;
-		max-width: 300px;
-		vertical-align: bottom;
+		max-width: 384px;
 	}
 	
-	@media screen and (min-aspect-ratio: 2/1) and (min-width: 1336px) {
-		.wrapper {			
-			max-width: 40em;
-		}
+	dt {
+		width: 5em;
+		float: left;
+		margin-right: 1em;
+		text-align: right;
+		font-weight: 700;
 	}
-	
-
-	.hr {
-		display: block;
-		width: 100%;
-		border-bottom: .3em solid black;
-	}
-
 
 </style>
 <aside class="vcard fs">
+	<img src="/pixel-tim.png" rel="me" class="photo">
 	<h1 class="fn">Marinin Tim</h1>
 	<dl class="contacts">
 		<dt>email</dt>
@@ -74,14 +68,15 @@
 			<dd><a class="url uid" rel="me" href="//vk.com/marinintim">@marinintim</a></dd>
 		<dt>twitter</dt>
 			<dd><a rel="me" class="url uid" href="//twitter.com/marinintim">@marinintim</a></dd>
+		<dt>medium</dt>
+			<dd><a rel="me" class="url uid" href="//medium.com/@marinintim">@marinintim</a></dd>
 	</dl>
-	<img src="tim.jpg" class="photo">
 </aside><!--
 --><main class="wrapper">
 	<h2>Who am I</h2>
 	<p>I'm a frontend developer.
 	<p>At this moment I'm working for social network <a href="//fotostrana.ru" rel="work" hreflang="ru">Fotostrana</a>.
-	<p>Also I'm editor of <a href="//frontiermag.ru" hreflang="ru">Frontier Magazine</a>, which is for web dev people, developer of <a href="//mistype.co">Mistype</a> and <a href="//editorial.io">Editorial</a>.
+	<p>Also I'm editor of <a href="//frontiermag.ru" hreflang="ru">Frontier Magazine</a>, which is for web dev people, developer of <a href="//mistype.co">Mistype</a>.
 	<p>I'm sketching at <a href="//sketchandscotch.tumblr.com">Sketch&Scotch</a>, writing on <a href="//medium.com/@marinintim" hreflang="ru">Medium</a>/<a href="//twitter.com/marinintim" hreflang="ru">Twitter</a> and&nbsp;doing a&nbsp;lot&nbsp;of&nbsp;interesting stuff elsewhere.
 	<p>Feel free to contact&nbsp;me.
 </main>
