@@ -1,0 +1,37 @@
+---
+---
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font: 16pt/1.618 'PT Sans Caption', 'Helvetica', Arial, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+  background: #f0f0f0;
+  color: #010101;
+}
+
+.index-main > h1 {
+  padding-right: 1.6em;
+  padding-bottom: 1.618em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+main {
+  max-width: 30em;
+}

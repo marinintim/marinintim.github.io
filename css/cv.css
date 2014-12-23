@@ -1,0 +1,66 @@
+---
+---
+
+ {
+  flex-direction: column;
+}
+
+section {
+  padding: 1em;
+}
+
+.experience {
+  list-style: none;
+  padding-left: 0;
+  max-width: 30em;
+}
+
+.experience li + li {
+  margin-top: 1em;
+  border-top: .1em solid #001100;
+  padding-top: 1.618em;
+}
+
+.experience li span {
+  display: inline-block;
+}
+
+.experience li > div:first-of-type {
+  margin-bottom: .5em;
+}
+
+.experience time {
+  display: block;
+  font-size: .7em;
+}
+
+.occupation {
+  display: block;
+  font-style: italic;
+}
+
+
+.company {
+  margin-left: -.5em;
+}
+
+.company::before {
+  content: '«';
+}
+
+.company::after {
+  content: '» —';
+}
+
+.skills {
+  padding-left: 0;
+  list-style-type: square;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+.about {
+  max-width: 24em;
+}

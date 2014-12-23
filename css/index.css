@@ -1,0 +1,47 @@
+---
+---
+
+
+.index-main h1 {
+  font-size: 3rem;
+  padding-right: 1.6em;
+  padding-bottom: 0em;
+}
+
+.index-main .fn {
+  margin-bottom: 0;
+}
+
+
+.index-main .contacts {
+  margin: 0em;
+  list-style: none;
+  padding: 0;
+}
+
+.index-main dt {
+  float: left; /* run-in is not supported anywhere, but still */
+  display: run-in;
+  margin-right: .2em;
+  font-weight: 700;
+}
+
+.index-main dt:after {
+  content: ':';
+}
+
+.index-main dd {
+  display: block;
+  margin-bottom: 1.618em;
+}
+
+.index-main dd a {
+  text-decoration: none;
+  color: #999;
+}
+
+
+.index-blog ol a {
+  text-decoration: none;
+  color: #999;
+}

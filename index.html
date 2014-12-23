@@ -1,92 +1,20 @@
-<!doctype html>
-<head>
-<meta charset="utf-8">
-<meta description="Homepage of Tim Marinin, web developer from Russia, living in Saint Petersburg.">
-<meta keywords="Marinin Tim, marinintim, randomwind, web development, web design">
-<meta name="google-site-verification" content="c-fSRCf-73MfvqzlCfjmrcyy_yXWGzf5jOupQfTSdUw" />
-<title>Marinin Tim — web developer</title>
-<link rel="icon" href="/favicon-tm.png">
-<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
-<style>
-	body {
-		margin: 0;
-		height: 100%;
-		width: 100%;
-		box-sizing: border-box;
-		font: 16pt/1.618 'PT Sans Caption', 'Helvetica', Arial, sans-serif;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		flex-wrap: wrap;
-	}
-
-	@media screen and (min-width: 768px) {
-		body {
-			flex-wrap: nowrap;
-		}
-	}
-
-  * {
-  	box-sizing: inherit;
-  }
-
-
-	main, aside {
-		padding: 1rem;
-	}
-
-	main {
-		max-width: 30em;
-	}
-
-	.fn {
-		margin-bottom: 0;
-	}
-
-
-	.contacts {
-		margin: 0;
-		margin-top: 0;
-		padding-top: 0;
-		list-style: none;
-		padding: 0;
-	}
-	
-	.photo {
-		max-width: 384px;
-	}
-	
-	dt {
-		width: 5em;
-		float: left;
-		margin-right: 1em;
-		text-align: right;
-		font-weight: 700;
-	}
-
-</style>
+---
+layout: base
+---
+<link href="/css/index.css" rel="stylesheet">
 </head>
 <body class="vcard">
-<aside class=" fs">
-	<a href="/tim.jpg" class="photo" rel="me" title="Click to non-pixel art version"><img src="/pixel-tim.png"></a>
-	<h1 class="fn">Tim Marinin</h1>
+<main class="index-main">
+	<h1 class="fn">Marinin Tim</h1>
 	<dl class="contacts">
-		<dt>email</dt>
-			<dd><a rel="me" href="mailto:marinintim@gmail.com" class="email">marinintim@gmail.com</a></dd>
-		<dt>vk</dt>
-			<dd><a class="url" rel="me" href="//vk.com/marinintim">@marinintim</a></dd>
+		<dt>blog</dt>
+			<dd><a rel="me" href="/blog">/blog</a></dd>
+		<dt>cv</dt>
+			<dd><a rel="me" class="url" href="/cv">/cv</a></dd>
 		<dt>twitter</dt>
-			<dd><a rel="me" class="url uid" href="//twitter.com/marinintim">@marinintim</a></dd>
-		<dt>medium</dt>
-			<dd><a rel="me" class="url uid" href="//medium.com/@marinintim">@marinintim</a></dd>
+			<dd><a rel="me" class="url uid" href="//twitter.com/marinintim" hreflang="ru">@marinintim</a></dd>
+		<dt>github</dt>
+			<dd><a rel="me" class="url uid" href="//github.com/marinintim" hreflang="ru">@marinintim</a></dd>
 	</dl>
-</aside><!--
---><main class="wrapper">
-	<h2>Who am I</h2>
-	<p>I'm a <span class="title">frontend developer</span>.
-	<p>At this moment I'm working for social network <a href="//fotostrana.ru" rel="work" class="org" hreflang="ru">Fotostrana</a>.
-	<p>Also I'm editor of <a href="//frontiermag.ru" class="org" hreflang="ru">Frontier Magazine</a>, which is for web dev people, developer of <a href="//mistype.co" class="org">Mistype</a>.
-	<p>I'm sketching at <a rel="me" href="//sketchandscotch.tumblr.com">Sketch&Scotch</a>, writing on <a rel="me" href="//medium.com/@marinintim" hreflang="ru">Medium</a>/<a class="url uid" rel="me" href="//twitter.com/marinintim" hreflang="ru">Twitter</a> and&nbsp;doing a&nbsp;lot&nbsp;of&nbsp;interesting stuff elsewhere.
-	<p>Feel free to contact&nbsp;me.
 </main>
 </body>

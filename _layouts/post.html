@@ -1,0 +1,18 @@
+---
+layout: base
+---
+<link rel="stylesheet" href="/css/blog-post.css">
+<main class="post">
+<header>
+<h1>
+  {{page.title}}
+</h1>
+<h2>Published by Marinin Tim at {{page.date | date: "%Y-%m-%d"}}. {% if page.lastrev %}Last revisited at {{page.lastrev}}{% endif %}</h2>
+</header>
+{{content}}
+
+<footer>
+  <p>That was article from Marinin Tim's blog.</p>
+  <p><code>liked ? <a href="//twitter.com/intent/tweet?text=I+read+and+liked+'{{page.title}}'&url=http://marinintim.com{{page.url}}&via=marinintim">share(article)</a> : {% if page.next %}<a href="{{page.next.url}}">read(article.next())</a>{% else %}null /* ;( */ {% endif %}</code></p>
+</footer>
+</main>
