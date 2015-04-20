@@ -1,0 +1,17 @@
+---
+layout: base
+title: Аккорды | Chords
+---
+<main>
+  <h1>Аккорды</h1>
+  <p>В полном беспорядке.</p>
+  <ul>
+    {% for page in site.pages %}
+      {% if page.layout == 'chords' %}
+        <li>
+          <a href="{{page.url}}">{{page.title}}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</main>
