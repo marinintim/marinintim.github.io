@@ -16,3 +16,10 @@
 .post .gist {
   max-width: 100%;
 }
+
+@media screen and (min-width: 60em) {
+  nav {
+    position: fixed;
+    left: 1em;
+  }
+}

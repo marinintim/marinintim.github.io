@@ -1,0 +1,24 @@
+---
+layout: blog
+lang: ru
+---
+  <p>
+    Фронтенд-разработчик. Живу в СПб.
+  </p>
+  <p>Иногда пушу на <a href="https://github.com/marinintim/">гитхаб</a> и думаю вслух в <a href="https://twitter.com/marinintim">твиттере</a>.
+  </p>
+  <p> Здесь же я пишу о программировании, фильмах и всякой чепухе. ❦  
+  </p>
+  <main>
+    <section>
+    <ol reversed>
+      {% for post in site.posts %}
+        {% if post.lang == 'ru' %}
+          <li><a hreflang="ru" href="{{post.url}}">{{post.title}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+    </section>
+  </main>
+
+  <p><a href="/">English version</a> is also available ❦

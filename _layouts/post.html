@@ -2,17 +2,28 @@
 layout: base
 ---
 <link rel="stylesheet" href="/css/blog-post.css">
-<main class="post">
-<header>
-<h1>
-  {{page.title}}
-</h1>
-<h2>Published by Marinin Tim at {{page.date | date: "%Y-%m-%d"}}. {% if page.lastrev %}Last revisited at {{page.lastrev}}{% endif %}</h2>
-</header>
-{{content}}
 
-<footer>
-  <p>That was article from Marinin Tim's blog.</p>
-  <p><code>liked ? <a href="//twitter.com/intent/tweet?text=I+read+and+liked+'{{page.title}}'&url=http://marinintim.com{{page.url}}&via=marinintim">share(article)</a> : {% if page.next %}<a href="{{page.next.url}}">read(article.next())</a>{% else %}null /* ;( */ {% endif %}</code></p>
-</footer>
+
+<main class="post">
+  <nav><a href="{% if page.lang == 'ru' %}/ru">В начало{%else%}/">Back to index{%endif%}</a></nav>
+
+  <h1>
+    {{page.title}}
+  </h1>
+
+  {{content}}
+
+  <footer>
+      {% if page.lang == 'ru' %}
+        <p>
+          Написал и опубликовал <a href="/ru">Маринин Тим</a>,<br> дата публикации в <abbr>ISO</abbr>-формате: <time datetime="{{page.date | date: "%Y-%m-%d"}}">{{page.date | date: "%Y-%m-%d"}}</time>
+          {% if page.lastrev %} Текст обновлён {{page.lastrev}}{% endif %} 
+        </p>
+        <p>Можно <a href="https://twitter.com/intent/tweet?text=Я+прочитал+пост+«{{page.title}}»&url=http://marinintim.com{{page.url}}&via=marinintim">поделиться</a> в твиттере ❦</p>
+        
+     {% else %}      
+        <p>Published by <a href="/">Marinin Tim</a> at <time datetime="{{page.date | date: "%Y-%m-%d"}}">{{page.date | date: "%Y-%m-%d"}}</time>. {% if page.lastrev %}Last revisited at {{page.lastrev}}{% endif %} ❦ </p>
+        <p>You can <a href="//twitter.com/intent/tweet?text=I+read+and+liked+'{{page.title}}'&url=http://marinintim.com{{page.url}}&via=marinintim">share it on twitter</a></p>
+     {% endif %}
+  </footer>    
 </main>

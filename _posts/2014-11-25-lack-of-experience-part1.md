@@ -1,6 +1,7 @@
 ---
 title: Lack of experience (part 1)
 next: 2014-11-28-lack-of-experience-part2
+name: 'wat'
 ---
 I don’t know how to node. That’s why I am trying to build things.
 
