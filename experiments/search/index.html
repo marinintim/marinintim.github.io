@@ -1,0 +1,41 @@
+---
+layout: base
+---
+<header style="max-width: 40em; padding: 1em;">
+<h1>Search Algorithms in Animations</h1>
+<style> 
+    img { display: inline-block; vertical-align: middle; margin: 0.3em; max-height: 1.5em;}
+    button { display: block; }
+</style>
+<p>On this page I demonstrate Depth-First Search, Breadth-First Search, and A* Search.</p>
+<p>Pathfinding algorithms are best examplified through (unsurprisinbly) pathfinding in games. In these demos a <img alt="hero" src="hero.png"> will walk through <img alt="grass" src="grass.png"> avoiding <img alt="stones" src="stone.png"> in order to reach the <img alt="can" src="can.png">.
+<p>You will need javascript enabled to see demos. I drew the sprites and coded algorithms. These demos use PIXI.js for actual drawing.</p>
+</header>
+<main>
+    <article>
+        <h2>Depth-First Search</h2>
+        <p>It is a very simple algorithm that uses stack to keep track of unexplored nodes.<button class="dfs-run">Run</button></p>
+        <div class="dfs-container"></div>
+    </article>
+    <article>
+        <h2>Breadth-First Search</h2>
+        <p>In fact, breadth-first search is just like DFS, but using queue instead of stack. <button class="bfs-run">Run</button>
+        <div class="bfs-container"></div>
+    </article>
+    <article>
+        <h2>A* Search</h2>
+        <p>Most complex of these algorithms, A* uses heuristics + knowledge to select order for traversal. In this case, heuristics is Manhattan distance. WARNING: algorithm there is incorrectly implemented and thus sometimes it couldn't find the way when such a way exists.  <button class="astar-run">Run</button>
+        <div class="astar-container"></div>
+    </article>
+
+    <footer>
+        <p>I hope that you've enjoyed these demos. It would be great, if you'll tell what you think to me at <a href="https://twitter.com/marinintim">twitter</a></p>
+    </footer>
+</main>
+
+<script src="js/datastructures.js"></script>
+<script src="js/pixi.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dfs.js"></script>
+<script src="js/bfs.js"></script>
+<script src="js/astar.js"></script>
