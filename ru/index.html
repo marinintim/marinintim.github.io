@@ -9,9 +9,6 @@ lang: ru
   </p>
   <p> Здесь же я пишу о программировании, фильмах и всякой чепухе. ❦  
   </p>
-  <main>
-    <section>
-    <ol reversed>
       {% for post in site.posts %}
         {% if post.lang == 'ru' %}
            <article>
@@ -20,8 +17,4 @@ lang: ru
           </article>
         {% endif %}
       {% endfor %}
-    </ol>
-    </section>
-  </main>
-
   <p><a href="/">English version</a> is also available ❦
