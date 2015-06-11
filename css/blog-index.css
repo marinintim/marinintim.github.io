@@ -4,3 +4,9 @@
 ol {
   padding: 0;
 }
+
+.publication-date {
+  display: block;
+  margin: 5em 0 -4em;
+  font-size: .7em;
+}
