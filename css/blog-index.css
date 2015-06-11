@@ -7,6 +7,17 @@ ol {
 
 .publication-date {
   display: block;
-  margin: 5em 0 -4em;
   font-size: .7em;
+}
+
+.publication-date + h1 {
+  margin-top: 0;
+}
+
+article > header {
+  margin-top: 3em;
+}
+
+article {
+  margin-bottom: 5em;
 }

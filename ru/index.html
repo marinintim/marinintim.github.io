@@ -2,6 +2,7 @@
 layout: blog
 lang: ru
 ---
+<section class="index-intro">
   <p>
     Фронтенд-разработчик. Живу в СПб.
   </p>
@@ -9,12 +10,17 @@ lang: ru
   </p>
   <p> Здесь же я пишу о программировании, фильмах и всякой чепухе. ❦  
   </p>
-      {% for post in site.posts %}
-        {% if post.lang == 'ru' %}
-           <article>
-	    <header><time class="publication-date" datetime="{{post.date}}">{{post.date}}</time><h1><a href="{{post.url}}">{{post.title}}</a></h1></header>
-	      {{post.content}}
-          </article>
-        {% endif %}
-      {% endfor %}
-  <p><a href="/">English version</a> is also available ❦
+</section>
+
+{% for post in site.posts %}
+{% if post.lang == 'ru' %}
+<article>
+  <header><time class="publication-date" datetime="{{post.date}}">{{post.date}}</time><h1><a href="{{post.url}}">{{post.title}}</a></h1></header>
+  {{post.content}}
+</article>
+{% endif %}
+{% endfor %}
+
+<footer>
+  <p><a href="/">English version</a> is also available ❦</p>
+</footer>
