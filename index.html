@@ -1,29 +1,23 @@
 ---
 layout: blog
+lang: ru
 ---
 <section class="index-intro">
   <p>
-    Front-end developer, living it up in Saint Petersburg, Russia.
+    Фронтенд-разработчик. Живу в СПб.
   </p>
-  <p>
-    Sometimes I push commits at <a href="https://github.com/marinintim/">github</a> and talking out loud at <a href="https://twitter.com/marinintim">twitter</a>.
+  <p>Иногда пушу на <a href="https://github.com/marinintim/">гитхаб</a> и думаю вслух в <a href="https://twitter.com/marinintim">твиттере</a>.
   </p>
-  <p>
-    This is my blog, where I write about software, movies and stuff ❦  
+  <p> Здесь же я пишу о программировании, фильмах и всякой чепухе. ❦  
   </p>
-</section>
-<section>
-  {% for post in site.posts %}
-  {% if post.lang == 'en' %}
-  <article>
-    <header><time class="publication-date" datetime="{{post.date}}">{{post.date}}</time><h1><a href="{{post.url}}">{{post.title}}</a></h1></header>
-	      {{post.content}}
-  </article>
-  {% endif %}
-  {% endfor %}
-</ol>
+  <p><a href="/en">English version</a> ❦</p>
 </section>
 
-<footer>
-  <p> Также часть постов существует <a href="/ru/">на русском языке</a> ❦
-</footer>
+{% for post in site.posts %}
+{% if post.lang == 'ru' %}
+<article>
+  <header><time class="publication-date" datetime="{{post.date}}">{{post.date}}</time><h1><a href="{{post.url}}">{{post.title}}</a></h1></header>
+  {{post.content}}
+</article>
+{% endif %}
+{% endfor %}

@@ -1,0 +1,29 @@
+---
+layout: blog
+---
+<section class="index-intro">
+  <p>
+    Front-end developer, living it up in Saint Petersburg, Russia.
+  </p>
+  <p>
+    Sometimes I push commits at <a href="https://github.com/marinintim/">github</a> and talking out loud at <a href="https://twitter.com/marinintim">twitter</a>.
+  </p>
+  <p>
+    This is my blog, where I write about software, movies and stuff ❦  
+  </p>
+</section>
+<section>
+  {% for post in site.posts %}
+  {% if post.lang == 'en' %}
+  <article>
+    <header><time class="publication-date" datetime="{{post.date}}">{{post.date | format 'Y-m-d' }}</time><h1><a href="{{post.url}}">{{post.title}}</a></h1></header>
+	      {{post.content}}
+  </article>
+  {% endif %}
+  {% endfor %}
+</ol>
+</section>
+
+<footer>
+  <p> Также часть постов существует <a href="/ru/">на русском языке</a> ❦
+</footer>
