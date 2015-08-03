@@ -12,13 +12,17 @@ section {
 .experience {
   list-style: none;
   padding-left: 0;
-  max-width: 30em;
+  max-width: 50em;
 }
 
 .experience li + li {
   margin-top: 1em;
   border-top: .1em solid #001100;
   padding-top: 1.618em;
+}
+
+.experience li {
+  page-break-inside: avoid;
 }
 
 .experience li span {
@@ -62,5 +66,5 @@ h2 {
 }
 
 .about {
-  max-width: 24em;
+  max-width: 30em;
 }
