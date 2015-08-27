@@ -3,6 +3,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -35,19 +36,26 @@ h2 {
 main {
   max-width: 100%;
   padding: 1em;
+  max-width: 40em;
 }
 
 @media screen and (min-width: 80em) {
   body {
-    font-size: 16pt;
+    font-size: 14pt;
   }
 
   main {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
     margin-left: 10em;
-    width: 50em;
+    padding: 2em;
   }
 }
 
 img {
   max-width: 100%;
+}
+
+.highlight {
+    overflow: auto;
 }
